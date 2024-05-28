@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}  
+     this post title
+{% endblock %} 
+ 
+{% block css_files %}
+<link rel="stylesheet" href="{% static "blog/post-detail.css" %}">
+{% endblock  %}
+{% block content %}     
+<section id="summary">
+    <h2>Post title</h2>
+    <article>
+        <img src="{% static "blog/images/mountain.jpg" %}" alt="post title">
+        <address>by prasad kadam</address>
+        <div>
+            Last updated on <time>luly 10</time>
+        </div>
+    </article>
+
+</section>
+
+<main>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Molestiae dicta vel eaque eligendi, unde nostrum odit quis 
+        debitis doloribus optio ab reprehenderit blanditiis. Eligendi
+         optio, deleniti fugiat enim libero fuga.</p>
+</main>
+
+{% endblock %}
